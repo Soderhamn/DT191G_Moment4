@@ -6,7 +6,10 @@ namespace MusicApi.Models {
 
         public int SongId { get; set; }
         
-        [Required] //Artist, Length och Category krävs.
+        [Required] //Title, Artist, Length och Category krävs.
+        public string? Title { get; set; }
+
+        [Required] 
         public string? Artist { get; set; }
 
         [Required]

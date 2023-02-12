@@ -16,6 +16,7 @@ namespace MusicApi.Migrations
                 {
                     SongId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
+                    Title = table.Column<string>(type: "TEXT", nullable: false),
                     Artist = table.Column<string>(type: "TEXT", nullable: false),
                     Length = table.Column<int>(type: "INTEGER", nullable: false),
                     Category = table.Column<string>(type: "TEXT", nullable: false)

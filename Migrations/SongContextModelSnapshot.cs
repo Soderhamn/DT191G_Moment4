@@ -33,6 +33,10 @@ namespace MusicApi.Migrations
                     b.Property<int>("Length")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.HasKey("SongId");
 
                     b.ToTable("Songs");
